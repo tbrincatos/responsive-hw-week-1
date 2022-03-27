@@ -1,6 +1,8 @@
 :root {
   --primary-color: #4c3c80;
-  --secondary-color: #886ce4a2;
+  --text-color: #1c133a;
+  --tertiary-color: #886ce434;
+  --box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 body {
   text-align: center;
@@ -8,8 +10,42 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--text-color);
   font-family: "Noto Serif", serif;
 }
+a,
 p {
   font-family: sans-serif;
+}
+p {
+  color: var(--text-color);
+}
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.email-address {
+  font-size: larger;
+  transition: all 200ms ease-in-out;
+}
+.email-address:hover {
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  font-weight: bolder;
+  padding: 15px;
+}
+.homepage:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+  margin: 15px 30px;
+  padding: 15px;
 }

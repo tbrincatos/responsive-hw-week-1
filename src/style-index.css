@@ -1,13 +1,18 @@
 :root {
   --primary-color: #4c3c80;
-  --secondary-color: #886ce4a2;
+  --secondary-color: #886ce434;
+  --text-color: #1c133a;
   --box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 body {
   padding-top: 30px;
   text-align: center;
 }
-
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
 a {
   border: 1px solid var(--primary-color);
   border-radius: 4px;
@@ -15,7 +20,7 @@ a {
   box-shadow: var(--box-shadow);
   font-family: sans-serif;
   margin: 15px;
-  padding: 15px;
+  padding: 16px;
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
@@ -33,6 +38,8 @@ a {
 .about-me:hover {
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+  font-weight: bold;
+  color: var(--text-color);
 }
 .greeting {
   font-family: "Noto Serif", serif;
