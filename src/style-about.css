@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #4c3c80;
+  --secondary-color: #886ce4a2;
+}
+body {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
+}
+p {
+  font-family: sans-serif;
+}

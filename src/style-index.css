@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #4c3c80;
+  --secondary-color: #886ce4a2;
+  --box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+body {
+  padding-top: 30px;
+  text-align: center;
+}
+
+a {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  font-family: sans-serif;
+  margin: 15px;
+  padding: 15px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
+.contact-me {
+  background-color: var(--secondary-color);
+}
+.contact-me:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.about-me:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+.greeting {
+  font-family: "Noto Serif", serif;
+}
